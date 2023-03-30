@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
-    "test": "",
+    "test": "vitest",
     "build": "tsc",
     "lint": "eslint src --ext .ts --fix",
     "prepublish": "npm run build"
@@ -16,11 +16,14 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^18.15.10",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
     "eslint": "^8.36.0",
+    "supertest": "^6.3.3",
     "tsx": "^3.12.6",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.8"
   },
   "prettier": {
     "semi": false,
